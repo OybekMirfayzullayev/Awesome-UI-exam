@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>AWESOME UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                texts: "#333333",
+                btncolor: "#647B64",
+                pcolor:"#4F4F4F",
+              },
+              screens:{
+                xs:{ 'min': '320px', 'max': '639px' }
+              },
+              font_family:{
+                "Inter":["Inter" , "sans-serif"],
+              },
+              
+            }
+          }
+        }
+      </script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <style>
+        .container{
+          width: 85% !important;
+          max-width: 1440px !important;
+          /* margin: 0 auto !important; */
+        }
+        .car:hover i{
+          background-color: #647B64;
+          color: white;
+        }
+        .mot:hover{
+          background:#647B64 ;
+          color: white;
+        }
+        .mot:hover h2, .mot:hover p{
+          color: white;
+        }
+        .mot:hover i{
+          background:white;
+        }
+      </style>
+</head>
+<body class="font-Inter bg-gradient-to-r from-white via-gray-100 to-white">
+    <nav class="container h-[100px] mx-auto flex items-center justify-between xs:w-[100%]">
+      <img src="images/logo awesome.png" alt="logo" class="w-[200px] xs:w-[130px]">
+      <ul class="flex items-center justify-center gap-[40px] text-texts font-medium text-[16px] xs:hidden">
+        <li class="cursor-pointer hover:text-gray-500">About Us</li>
+        <li class="cursor-pointer hover:text-gray-500">Contact Us</li>
+        <li class="cursor-pointer hover:text-gray-500">Store</li>
+        <li class="cursor-pointer hover:text-gray-500">Use Cases</li>
+        <li class="cursor-pointer hover:text-gray-500"><button class="text-white w-[95px] h-[40px] bg-btncolor rounded-[4px] active:border-btncolor active:bg-white active:text-btncolor active:border-2">Register</button></li>
+      </ul>
+      <div class="lg:hidden">
+        <i class="fa-solid fa-bars text-[22px]"></i>
+      </div>
+    </nav>
+    <header class="container mx-auto h-[600px] flex mb-[70px] xs:h-[320px]">
+      <div class="w-[55%] h-full flex justify-center flex-col lg:gap-7 lg:pl-[30px] xs:w-[100%] xs:gap-5">
+        <h1 class="lg:w-[450px] font-medium text-texts lg:text-[40px] lg:leading-[45px] xs:text-[25px] xs:leading-[30px] xs:w-[300px]">Lorem ipsum dolor sit amet, consectetur</h1>
+        <p class=" lg:w-[400px] font-normal text-texts lg:text-[18px] lg:leading-[23px] xs:text-[12px] xs:leading-[18px] xs:w-[300px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue et eros, pellentesque et. Tristique ullamcorper ac pharetra in nisi sit vivamus lorem. </p>
+        <button class="lg:w-[240px] lg:h-[50px] bg-btncolor lg:text-[17px] font-bold text-white font-Inter rounded-[3px] active:border-btncolor active:bg-white active:text-btncolor active:border-2 xs:w-[180px] xs:h-[35px] xs:text-[14px] xs:font-semibold">GET STARTED <i class="fa-solid fa-arrow-right ml-4"></i></button>
+      </div>   
+      <div class="w-[45%] h-full flex items-center justify-center xs:hidden"><img src="images/play tennis.png" alt="play tennis" class="w-[320px]"></div>
+    </header>
+    <main class="container mx-auto lg:h-[450px] xs:w-[100%] flex items-center justify-center xs:flex-col">
+      <div class="lg:w-[55%] xs:w-[100%] h-full flex flex-col relative lg:pl-[30px]">
+        <div class="lg:w-[530px] lg:h-[130px] xs:w-[300px] xs:h-[90px] bg-gradient-to-t from-transparent to-[rgba(239,128,49,0.15)] flex justify-center flex-col absolute left-[-30px] top-[-10px]">
+        </div>
+        <h3 class="text-[#F3B562] lg:text-[22px] font-medium xs:text-[14px]">MOT CONSECTET</h3>
+        <h1 class="font-medium text-[#647B64] lg:text-[35px] xs:text-[22px] mb-[30px]">AMET,CONSECTET</h1>
+        <p class="font-normal lg:text-[16px] lg:w-[350px] text-[#4F4F4F] lg:leading-[23px] mb-[20px] xs:text-[12px] xs:leading-[16px] xs:w-[260px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
+        <button class="lg:w-[260px] lg:h-[50px] xs:w-[180px] xs:h-[35px] xs:text-[14px] xs:font-semibold bg-btncolor text-[17px] font-bold text-white font-Inter rounded-[3px] active:border-btncolor active:bg-white active:text-btncolor active:border-2">GET STARTED <i class="fa-solid fa-arrow-right ml-4"></i></button>
+      </div>
+      <div class="lg:w-[45%] xs:w-[100%] lg:h-full xs:h-[340px] grid grid-cols-2 gap-3 mt-14">
+        <div class="car hover:bg-white lg:w-[270px] lg:h-[200px] xs:w-[100%] xs:h-[150px] rounded-[10px] flex lg:pl-[30px] justify-center flex-col gap-[6px] xs:pl-[20px]">
+          <i class="fa-solid fa-car w-[45px] h-[45px] bg-white rounded-[8px] flex items-center justify-center text-[22px] text-btncolor"></i>
+          <h1 class="text-texts lg:text-[22px] font-medium xs:text-[13px]">Car Rental</h1>
+          <p class="text-[#4F4F4F] lg:text-[12px] font-normal lg:w-[200px] xs:text-[8px] xs:w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
+        </div>
+        <div class="car hover:bg-white lg:w-[270px] lg:h-[200px] xs:w-[100%] xs:h-[150px] rounded-[10px] flex lg:pl-[30px] justify-center flex-col gap-[6px] xs:pl-[20px]">
+          <i class="fa-solid fa-ship w-[45px] h-[45px] bg-white rounded-[8px] flex items-center justify-center text-[22px] text-btncolor"></i>
+          <h1 class="text-texts lg:text-[22px] font-medium xs:text-[13px]">Boat Cruise</h1>
+          <p class="text-[#4F4F4F] lg:text-[12px] font-normal lg:w-[200px] xs:text-[8px] xs:w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
+        </div>
+        <div class="car hover:bg-white lg:w-[270px] lg:h-[200px] xs:w-[100%] xs:h-[150px] rounded-[10px] flex lg:pl-[30px] justify-center flex-col gap-[6px] xs:pl-[20px]">
+          <i class="fa-solid fa-bus w-[45px] h-[45px] bg-white rounded-[8px] flex items-center justify-center text-[22px] text-btncolor"></i>
+          <h1 class="text-texts lg:text-[22px] font-medium xs:text-[13px]">Bus Trip</h1>
+          <p class="text-[#4F4F4F] lg:text-[12px] font-normal lg:w-[200px] xs:text-[8px] xs:w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
+        </div>
+        <div class="car hover:bg-white lg:w-[270px] lg:h-[200px] xs:w-[100%] xs:h-[150px] rounded-[10px] flex lg:pl-[30px] justify-center flex-col gap-[6px] xs:pl-[20px]">
+          <i class="fa-solid fa-road w-[45px] h-[45px] bg-white rounded-[8px] flex items-center justify-center text-[22px] text-btncolor"></i>
+          <h1 class="text-texts lg:text-[22px] font-medium xs:text-[13px]">Road Trip</h1>
+          <p class="text-[#4F4F4F] lg:text-[12px] font-normal lg:w-[200px] xs:text-[8px] xs:w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
+        </div>
+      </div>
+    </main>
+    <section class="container mx-auto h-[500px]  flex items-center justify-center flex-col relative">
+      <h2 class="text-[#F3B562] lg:text-[24px] font-medium xs:text-[16px]">MOT CONSECTET</h2>
+      <h1 class="font-medium text-[#647B64] lg:text-[35px] xs:text-[22px] mb-4">AMET, CONSECTET IQUET</h1>
+      <div class="w-[100%] lg:h-[300px] xs:h-[400px] flex items-center justify-between xs:flex-col">
+
+        <div class="mot lg:w-[320px] lg:h-[270px] xs:w-[80%] xs:h-[180px] bg-gradient-to-t from-gray-200 to-white bg-[linear-gradient(rgba(100,123,100,0.77)70%,rgba(100,123,100,0)0%,rgba(100,123,100,0)0%)] rounded-[8px] flex justify-center flex-col lg:pl-[40px] gap-[10px] xs:pl-[20px]">
+          <i class="lg:w-[42px] lg:h-[42px] xs:w-[27px] xs:h-[27px] xs:text-[24px] rounded-[20px] flex items-center justify-center fa-brands fa-python lg:text-[35px] text-btncolor"></i>
+          <h2 class="text-texts font-medium lg:text-[22px] xs:text-[12px]">MOT consectet</h2>
+          <p class="lg:text-[15px] font-medium text-[#4F4F4F] lg:w-[240px] xs:text-[10px] xs:w-[120px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
+        </div>
+
+        <div class="mot lg:w-[320px] lg:h-[270px] xs:w-[80%] xs:h-[180px] bg-gradient-to-t from-gray-200 to-white bg-[linear-gradient(rgba(100,123,100,0.77)70%,rgba(100,123,100,0)0%,rgba(100,123,100,0)0%)] rounded-[8px] flex justify-center flex-col lg:pl-[40px] gap-[10px] xs:pl-[20px]">
+          <i class="lg:w-[42px] lg:h-[42px] xs:w-[27px] xs:h-[27px] xs:text-[24px] rounded-[20px] flex items-center justify-center fa-solid fa-dollar-sign text-[35px] text-btncolor"></i>
+          <h2 class="text-texts font-medium lg:text-[22px] xs:text-[12px]">MOT consectet</h2>
+          <p class="lg:text-[15px] font-medium text-[#4F4F4F] lg:w-[240px] xs:text-[10px] xs:w-[120px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
+        </div>
+
+        <div class="mot lg:w-[320px] lg:h-[270px] xs:w-[50%] xs:h-[200px] bg-gradient-to-t from-gray-200 to-white bg-[linear-gradient(rgba(100,123,100,0.77)70%,rgba(100,123,100,0)0%,rgba(100,123,100,0)0%)] rounded-[8px] flex justify-center flex-col lg:pl-[40px] gap-[10px] z-10 xs:hidden">
+          <i class="w-[42px] h-[42px] rounded-[20px] flex items-center justify-center fa-brands fa-google text-[35px] text-btncolor"></i>
+          <h2 class="text-texts font-medium text-[22px]">MOT consectet</h2>
+          <p class="text-[15px] font-medium text-[#4F4F4F] w-[240px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
+        </div>
+
+      </div>
+      <div class="absolute w-[300px] h-[110px] bg-gradient-to-b from-transparent to-[rgba(239,128,49,0.15)] bottom-5 right-[-114px] rounded-l-[8px] xs:hidden"></div>
+    </section>
+    <article class="container mx-auto lg:h-[600px] xs:h-[370px] lg:mt-[30px] flex items-center justify-center">
+      <div class="w-[50%] h-full flex items-center pl-[45px] xs:hidden">
+        <div class="w-[435px] h-[420px] bg-gradient-to-tr from-transparent to-[rgba(239,128,49,0.15)] relative">
+          <img src="images/article page.png" alt="team" class="w-full h-full mx-auto absolute top-[-45px] left-[-45px]">
+        </div>
+      </div>
+
+      <div class="lg:w-[50%] xs:w-[100%] lg:h-full flex justify-center flex-col lg:pl-[50px]">
+        <h3 class="text-[#F3B562] lg:text-[22px] font-medium xs:text-[15px]">MOT CONSECTET</h3>
+        <h1 class="font-medium text-[#647B64] lg:text-[35px] mb-[10px] xs:text-[27px]">AMET,CONSECTET</h1>
+        <p class="font-normal lg:text-[15px] lg:w-[330px] text-[#4F4F4F] lg:leading-[20px] mb-[20px] xs:w-[100%] xs:text-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
+        <button class="lg:w-[260px] lg:h-[50px] xs:w-[180px] xs:h-[35px] xs:text-[14px] xs:font-semibold bg-btncolor text-[17px] lg:font-bold text-white font-Inter rounded-[3px] active:border-btncolor active:bg-white active:text-btncolor active:border-2">GET STARTED <i class="fa-solid fa-arrow-right ml-4"></i></button>
+      </div>
+
+    </article>
+    <div class="container mx-auto lg:h-[550px] flex justify-center flex-col mb-20">
+      <h3 class="lg:text-[24px] xs:text-[15px] font-medium text-[#F3B562]">MOT CONSECTET</h3>
+      <h1 class="lg:text-[35px] xs:text-[25px] font-medium text-btncolor lg:mb-10 xs:mb-7">AMET,CONSECTET SIT QUIS </h1>
+
+      <div class="lg:h-[350px] flex items-center justify-between xs:flex-col xs:gap-6">
+
+        <div class="lg:w-[25%] xs:w-[100%] lg:h-full xs:h-[300px] bg-gradient-to-t from-gray-200 to-white bg-[linear-gradient(rgba(100,123,100,0.77)70%,rgba(100,123,100,0)0%,rgba(100,123,100,0)0%)] rounded-[8px] flex flex-col hover:scale-[1.1]">
+          <div class="w-full h-[75%] flex  gap-2 px-10 pt-10">
+            <img src="images/1 img.png" alt="man" class="h-[90%]">
+            <p class="text-[16px] font-medium">CTO May & Baker <br> <span class="text-[13px] font-normal text-[#4F4F4F]">Tayo Oshinuwa</span></p>
+          </div>
+          <div class="w-full h-[25%] flex items-center justify-center">
+            <p class="text-[16px] text-[#4F4F4F] italic w-[65%] leading-[20px]">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
+          </div>
+        </div>
+
+        <div class="lg:w-[25%] xs:w-[100%] lg:h-full xs:h-[300px] bg-gradient-to-t from-gray-200 to-white bg-[linear-gradient(rgba(100,123,100,0.77)70%,rgba(100,123,100,0)0%,rgba(100,123,100,0)0%)] rounded-[8px] flex flex-col hover:scale-[1.1]">
+          <div class="w-full h-[75%] flex  gap-2 px-10 pt-10">
+            <img src="images/2 img.png" alt="man" class="h-[90%]">
+            <p class="text-[16px] font-medium">CTO May & Baker <br> <span class="text-[13px] font-normal text-[#4F4F4F]">Tayo Oshinuwa</span></p>
+          </div>
+          <div class="w-full h-[25%] flex items-center justify-center">
+            <p class="text-[16px] text-[#4F4F4F] italic w-[65%] leading-[20px]">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
+          </div>
+        </div>
+
+        <div class="lg:w-[25%] xs:w-[100%] lg:h-full xs:h-[300px] bg-gradient-to-t from-gray-200 to-white bg-[linear-gradient(rgba(100,123,100,0.77)70%,rgba(100,123,100,0)0%,rgba(100,123,100,0)0%)] rounded-[8px] flex flex-col hover:scale-[1.1]">
+          <div class="w-full h-[75%] flex  gap-2 px-10 pt-10">
+            <img src="images/3 img.png" alt="man" class="h-[90%]">
+            <p class="text-[16px] font-medium">CTO May & Baker <br> <span class="text-[13px] font-normal text-[#4F4F4F]">Tayo Oshinuwa</span></p>
+          </div>
+          <div class="w-full h-[25%] flex items-center justify-center">
+            <p class="text-[16px] text-[#4F4F4F] italic w-[65%] leading-[20px]">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+   <div class="bg-[#F0DCC5]">
+    <footer class="container mx-auto lg:h-[400px] flex items-center lg:justify-between  xs:flex-wrap">
+      <div class="lg:w-[300px] lg:h-[330px] xs:w-[100%] flex pt-12 flex-col">
+        <img src="images/logo awesome.png" alt="logo" class="w-[150px] mb-3">
+        <p class="text-[14px] font-normal w-[200px] text-pcolor leading-[18px] mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet</p>
+        <p class="text-[14px] text-pcolor font-normal w-[120px] mb-4">Copyright © 2021 AWESOME.</p>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/oybek_mirfayzullayev/" target="_blank"><i class="w-[40px] h-[40px] rounded-[20px] bg-[#647b6440] flex items-center justify-center text-[26px] text-btncolor fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/?locale=ru_RU" target="_blank"><i class="w-[40px] h-[40px] rounded-[20px] bg-[#647b6440] flex items-center justify-center text-[26px] text-btncolor fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/?lang=ru" target="_blank"><i class="w-[40px] h-[40px] rounded-[20px] bg-[#647b6440] flex items-center justify-center text-[26px] text-btncolor fa-brands fa-twitter"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="w-[40px] h-[40px] rounded-[20px] bg-[#647b6440] flex items-center justify-center text-[26px] text-btncolor fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="lg:w-[300px] lg:h-[330px] xs:w-[50%] flex lg:pl-[70px] pt-12 flex-col gap-5">
+        <h1 class="text-btncolor text-[22px] font-medium">Company</h1>
+        <ul class="flex flex-col gap-2 text-[16px] font-normal">
+          <li>About</li>
+          <li>Jobs</li>
+          <li>Blog</li>
+          <li>Careers</li>
+          <li>Community</li>
+        </ul>
+      </div>
+      <div class="lg:w-[300px] lg:h-[330px] xs:w-[50%] flex lg:pl-[70px] pt-12 flex-col gap-5">
+        <h1 class="text-btncolor text-[22px] font-medium">Support</h1>
+        <ul class="flex flex-col gap-2 text-[16px] font-normal">
+          <li>Contact Us</li>
+          <li>Resource</li>
+          <li>Help Center</li>
+          <li>Sales Software</li>
+          <li>Knowledge Base</li>
+        </ul>
+      </div>
+      <div class="lg:w-[300px] lg:h-[330px] xs:w-[100%] flex lg:pl-[50px] pt-12 flex-col xs:mb-5">
+        <h1 class="text-btncolor text-[22px] font-medium mb-4">SEND MESSAGE</h1>
+        <input type="email" placeholder="Your email address" class="lg:w-[260px] h-[50px] xs:w-[100%] outline-none pl-[20px] mb-7">
+        <input type="submit" value="SEND MESSAGE" class="lg:w-[260px] h-[50px] xs:w-[100%] bg-btncolor text-white text-[15px] font-bold active:border-2 active:bg-transparent active:border-btncolor active:text-btncolor">
+      </div>
+    </footer>
+   </div>
+</body>
+</html>
